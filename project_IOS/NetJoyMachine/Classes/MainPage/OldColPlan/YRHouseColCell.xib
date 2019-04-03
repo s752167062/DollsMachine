@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YRHouseColCell">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="84"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhuangshi_icon" translatesAutoresizingMaskIntoConstraints="NO" id="BpZ-Lf-Ng3">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="84"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BpZ-Lf-Ng3" secondAttribute="trailing" id="72p-qK-GmW"/>
+                <constraint firstItem="BpZ-Lf-Ng3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ye8-ot-tc9"/>
+                <constraint firstItem="BpZ-Lf-Ng3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hdP-EI-BsV"/>
+                <constraint firstAttribute="bottom" secondItem="BpZ-Lf-Ng3" secondAttribute="bottom" id="uMz-Bt-S2f"/>
+            </constraints>
+            <size key="customSize" width="419" height="84"/>
+            <point key="canvasLocation" x="70.5" y="69"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="zhuangshi_icon" width="640" height="83"/>
+    </resources>
+</document>

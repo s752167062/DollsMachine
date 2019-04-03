@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wza-Eg-KPX" customClass="YRYRGoldCoinColCell">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiaoxin" translatesAutoresizingMaskIntoConstraints="NO" id="urW-IH-D03">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="168"/>
+                        <color key="backgroundColor" red="0.9529411793" green="0.1486827084" blue="0.15416284869999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="么么哒小新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i7-rD-KUK" customClass="FlowerLabel">
+                        <rect key="frame" x="12" y="134" width="66.5" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="outlineWidth">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUo-Py-rGR">
+                        <rect key="frame" x="141" y="134" width="39" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" title="88" image="jinbi_icon"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="urW-IH-D03" firstAttribute="top" secondItem="wza-Eg-KPX" secondAttribute="top" id="1KI-ja-owR"/>
+                <constraint firstAttribute="trailing" secondItem="tUo-Py-rGR" secondAttribute="trailing" constant="12" id="SMO-mK-MqP"/>
+                <constraint firstItem="8i7-rD-KUK" firstAttribute="leading" secondItem="wza-Eg-KPX" secondAttribute="leading" constant="12" id="UWR-EN-VdV"/>
+                <constraint firstAttribute="bottom" secondItem="8i7-rD-KUK" secondAttribute="bottom" constant="12" id="ZY5-so-Ilm"/>
+                <constraint firstItem="8i7-rD-KUK" firstAttribute="top" secondItem="tUo-Py-rGR" secondAttribute="top" id="aPs-m7-Bzd"/>
+                <constraint firstItem="tUo-Py-rGR" firstAttribute="bottom" secondItem="8i7-rD-KUK" secondAttribute="bottom" id="qSj-ea-lfe"/>
+                <constraint firstItem="urW-IH-D03" firstAttribute="leading" secondItem="wza-Eg-KPX" secondAttribute="leading" id="spU-WC-cG7"/>
+                <constraint firstAttribute="bottom" secondItem="urW-IH-D03" secondAttribute="bottom" id="t9q-jd-nre"/>
+                <constraint firstAttribute="trailing" secondItem="urW-IH-D03" secondAttribute="trailing" id="tZq-cS-Kjj"/>
+            </constraints>
+            <size key="customSize" width="192" height="168"/>
+            <connections>
+                <outlet property="joyImgV" destination="urW-IH-D03" id="iRq-GZ-JU1"/>
+                <outlet property="nameL" destination="8i7-rD-KUK" id="6am-ld-fgU"/>
+                <outlet property="numBtn" destination="tUo-Py-rGR" id="QNc-4W-ngw"/>
+            </connections>
+            <point key="canvasLocation" x="103" y="115"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="jinbi_icon" width="22" height="22"/>
+        <image name="xiaoxin" width="250" height="250"/>
+    </resources>
+</document>

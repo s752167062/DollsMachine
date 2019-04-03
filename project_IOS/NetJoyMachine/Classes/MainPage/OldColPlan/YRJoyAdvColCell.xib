@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="2Cr-xD-bk3" customClass="YRJoyAdvColCell">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Luo-pd-Hjy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现在购买游戏币还可享受7折优惠😯" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej4-fR-0Qj" customClass="FlowerLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="outlineWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcA-CA-G75">
+                                <rect key="frame" x="358" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qcA-CA-G75" secondAttribute="height" multiplier="1:1" id="V2b-qX-nHt"/>
+                                </constraints>
+                                <state key="normal" image="icon_up_black"/>
+                                <state key="selected" image="icon_buttom_black"/>
+                                <connections>
+                                    <action selector="closeBtnDidClicked:" destination="2Cr-xD-bk3" eventType="touchUpInside" id="lOr-CF-wUv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ej4-fR-0Qj" secondAttribute="trailing" id="8pE-1L-eEE"/>
+                            <constraint firstAttribute="height" constant="35" id="DqH-l4-opD"/>
+                            <constraint firstAttribute="bottom" secondItem="ej4-fR-0Qj" secondAttribute="bottom" id="N0g-18-rZG"/>
+                            <constraint firstItem="qcA-CA-G75" firstAttribute="top" secondItem="Luo-pd-Hjy" secondAttribute="top" id="WdF-UK-ku9"/>
+                            <constraint firstAttribute="trailing" secondItem="qcA-CA-G75" secondAttribute="trailing" id="cRa-Ur-ZQG"/>
+                            <constraint firstAttribute="bottom" secondItem="qcA-CA-G75" secondAttribute="bottom" id="caC-Xz-LQC"/>
+                            <constraint firstItem="ej4-fR-0Qj" firstAttribute="top" secondItem="Luo-pd-Hjy" secondAttribute="top" id="fI2-eI-Xp7"/>
+                            <constraint firstItem="ej4-fR-0Qj" firstAttribute="leading" secondItem="Luo-pd-Hjy" secondAttribute="leading" id="ioY-0e-NMj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwo-IC-1pa" customClass="SDCycleScrollView">
+                        <rect key="frame" x="0.0" y="35" width="393" height="199"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Luo-pd-Hjy" firstAttribute="top" secondItem="2Cr-xD-bk3" secondAttribute="top" id="CLA-kY-2J9"/>
+                <constraint firstItem="lwo-IC-1pa" firstAttribute="leading" secondItem="2Cr-xD-bk3" secondAttribute="leading" id="OYc-Pe-jdi"/>
+                <constraint firstItem="Luo-pd-Hjy" firstAttribute="leading" secondItem="2Cr-xD-bk3" secondAttribute="leading" id="QlS-bj-3Iy"/>
+                <constraint firstAttribute="trailing" secondItem="Luo-pd-Hjy" secondAttribute="trailing" id="RMO-cg-4Zx"/>
+                <constraint firstAttribute="trailing" secondItem="lwo-IC-1pa" secondAttribute="trailing" id="bSV-To-vc5"/>
+                <constraint firstAttribute="bottom" secondItem="lwo-IC-1pa" secondAttribute="bottom" id="lD7-CJ-vtA"/>
+                <constraint firstItem="lwo-IC-1pa" firstAttribute="top" secondItem="Luo-pd-Hjy" secondAttribute="bottom" id="u1E-1V-nSw"/>
+            </constraints>
+            <size key="customSize" width="393" height="234"/>
+            <connections>
+                <outlet property="InfiniteScrView" destination="lwo-IC-1pa" id="cjQ-Bf-Pu0"/>
+                <outlet property="advLabel" destination="ej4-fR-0Qj" id="5QI-z3-Qhz"/>
+                <outlet property="closeBtn" destination="qcA-CA-G75" id="Xj5-Gh-s2g"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="195"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_buttom_black" width="20" height="10"/>
+        <image name="icon_up_black" width="20" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YRLoginVc">
+            <connections>
+                <outlet property="loginBtn" destination="wP1-Vr-uCP" id="dsd-Y1-oMM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denglujiemian_beijingtu" translatesAutoresizingMaskIntoConstraints="NO" id="Hfu-yB-jXO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing_xiongmao" translatesAutoresizingMaskIntoConstraints="NO" id="CB0-lD-Tba">
+                    <rect key="frame" x="0.0" y="495" width="375" height="172"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aON-qO-9ck">
+                    <rect key="frame" x="82.5" y="438" width="209" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="登录注册表示同意用户协议和隐私条款"/>
+                    <connections>
+                        <action selector="clauseBtnDidClicked:" destination="-1" eventType="touchUpInside" id="KaM-2V-9R5"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denglu_beijing_icon" translatesAutoresizingMaskIntoConstraints="NO" id="exC-y1-9ss">
+                    <rect key="frame" x="61.5" y="214.5" width="252" height="99"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmU-Dm-R1u">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RTJ-Ma-Gde">
+                            <rect key="frame" x="75.5" y="71" width="224" height="73"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RTJ-Ma-Gde" firstAttribute="centerX" secondItem="HmU-Dm-R1u" secondAttribute="centerX" id="IRs-YP-T8d"/>
+                        <constraint firstItem="RTJ-Ma-Gde" firstAttribute="centerY" secondItem="HmU-Dm-R1u" secondAttribute="centerY" id="NgQ-NQ-6nI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm3-Uj-LrA">
+                    <rect key="frame" x="0.0" y="313.5" width="375" height="124.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP1-Vr-uCP">
+                            <rect key="frame" x="81.5" y="40.5" width="212" height="44"/>
+                            <state key="normal" backgroundImage="denglujiemian_denglu_button"/>
+                            <connections>
+                                <action selector="weixinLoginBtnDidClicked:" destination="-1" eventType="touchUpInside" id="e1F-8h-dJc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wP1-Vr-uCP" firstAttribute="centerY" secondItem="qm3-Uj-LrA" secondAttribute="centerY" id="Ibg-Xt-1hK"/>
+                        <constraint firstItem="wP1-Vr-uCP" firstAttribute="centerX" secondItem="qm3-Uj-LrA" secondAttribute="centerX" id="qAm-HN-rzV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CB0-lD-Tba" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1hf-P1-rnh"/>
+                <constraint firstItem="exC-y1-9ss" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="64e-VA-RIQ"/>
+                <constraint firstItem="aON-qO-9ck" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8uV-nm-fiY"/>
+                <constraint firstItem="HmU-Dm-R1u" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AC3-t0-mTk"/>
+                <constraint firstAttribute="trailing" secondItem="qm3-Uj-LrA" secondAttribute="trailing" id="D9C-hB-je2"/>
+                <constraint firstAttribute="bottom" secondItem="CB0-lD-Tba" secondAttribute="bottom" id="DWK-ZI-pUt"/>
+                <constraint firstItem="HmU-Dm-R1u" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DhA-T1-KFw"/>
+                <constraint firstItem="qm3-Uj-LrA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Jdb-QR-62R"/>
+                <constraint firstAttribute="bottom" secondItem="Hfu-yB-jXO" secondAttribute="bottom" id="N94-co-KIL"/>
+                <constraint firstItem="qm3-Uj-LrA" firstAttribute="top" secondItem="exC-y1-9ss" secondAttribute="bottom" id="UTq-UB-msd"/>
+                <constraint firstAttribute="trailing" secondItem="CB0-lD-Tba" secondAttribute="trailing" id="Uo9-Z2-JhI"/>
+                <constraint firstItem="aON-qO-9ck" firstAttribute="top" secondItem="qm3-Uj-LrA" secondAttribute="bottom" id="XMB-1Z-6gx"/>
+                <constraint firstItem="Hfu-yB-jXO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="acS-vl-prN"/>
+                <constraint firstItem="exC-y1-9ss" firstAttribute="baseline" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="gm5-OD-qtU"/>
+                <constraint firstAttribute="trailing" secondItem="Hfu-yB-jXO" secondAttribute="trailing" id="h7F-oz-5ZB"/>
+                <constraint firstAttribute="trailing" secondItem="HmU-Dm-R1u" secondAttribute="trailing" id="pkg-sU-EgZ"/>
+                <constraint firstItem="CB0-lD-Tba" firstAttribute="top" secondItem="aON-qO-9ck" secondAttribute="bottom" constant="30" id="qmS-yo-PRg"/>
+                <constraint firstItem="exC-y1-9ss" firstAttribute="top" secondItem="HmU-Dm-R1u" secondAttribute="bottom" id="yao-H5-Jwu"/>
+                <constraint firstItem="Hfu-yB-jXO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z4W-ya-s5m"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beijing_xiongmao" width="320" height="172"/>
+        <image name="denglu_beijing_icon" width="252" height="99"/>
+        <image name="denglujiemian_beijingtu" width="320" height="568"/>
+        <image name="denglujiemian_denglu_button" width="212" height="44"/>
+        <image name="logo" width="224" height="73"/>
+    </resources>
+</document>

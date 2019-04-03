@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9OM-KB-rde" customClass="YRCaptureSuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倒计时: 30s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwF-Hx-jcO" customClass="FlowerLabel">
+                    <rect key="frame" x="142" y="189" width="90.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-bd-LPd">
+                    <rect key="frame" x="68.5" y="108.5" width="51" height="49"/>
+                    <state key="normal" image="youxijieshu_fanhui_button">
+                        <color key="titleColor" red="0.92801547049999999" green="0.45724540949999998" blue="0.45962017770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clostBtnDidClicked:" destination="9OM-KB-rde" eventType="touchUpInside" id="E7e-Wz-FYQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哇哦!你抓到了!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBh-bN-uOZ" customClass="FlowerLabel">
+                    <rect key="frame" x="125.5" y="56" width="124" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwV-NE-dOk">
+                    <rect key="frame" x="256" y="108.5" width="51" height="49"/>
+                    <state key="normal" image="youxijieshu_fenxiang_button">
+                        <color key="titleColor" red="0.92801547049999999" green="0.45724540949999998" blue="0.45962017770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sharedBtnDidClicked:" destination="9OM-KB-rde" eventType="touchUpInside" id="xhY-yG-mP8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fNf-bd-LPd" firstAttribute="centerX" secondItem="9OM-KB-rde" secondAttribute="centerX" multiplier="0.5" id="97a-Am-7vW"/>
+                <constraint firstItem="BwV-NE-dOk" firstAttribute="centerY" secondItem="9OM-KB-rde" secondAttribute="centerY" id="Ezm-7T-Evx"/>
+                <constraint firstItem="cBh-bN-uOZ" firstAttribute="centerY" secondItem="9OM-KB-rde" secondAttribute="centerY" multiplier="0.5" id="HYH-Mp-D68"/>
+                <constraint firstItem="zwF-Hx-jcO" firstAttribute="centerX" secondItem="9OM-KB-rde" secondAttribute="centerX" id="JCQ-im-oVS"/>
+                <constraint firstItem="fNf-bd-LPd" firstAttribute="centerY" secondItem="9OM-KB-rde" secondAttribute="centerY" id="Knt-gv-uGu"/>
+                <constraint firstItem="cBh-bN-uOZ" firstAttribute="centerX" secondItem="9OM-KB-rde" secondAttribute="centerX" id="N02-js-iOQ"/>
+                <constraint firstItem="zwF-Hx-jcO" firstAttribute="centerY" secondItem="9OM-KB-rde" secondAttribute="centerY" multiplier="1.5" id="dIc-DW-ot1"/>
+                <constraint firstItem="BwV-NE-dOk" firstAttribute="centerX" secondItem="9OM-KB-rde" secondAttribute="centerX" multiplier="1.5" id="gCn-EL-hjW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countdownLabel" destination="zwF-Hx-jcO" id="kGr-eg-6Mz"/>
+                <outlet property="successL" destination="cBh-bN-uOZ" id="7mc-lN-q5J"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="-124"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="youxijieshu_fanhui_button" width="51" height="49"/>
+        <image name="youxijieshu_fenxiang_button" width="51" height="49"/>
+    </resources>
+</document>

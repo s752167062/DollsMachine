@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YRExchangeVc">
+            <connections>
+                <outlet property="exchangeBtn" destination="aXG-YB-8el" id="8Fx-3G-FJI"/>
+                <outlet property="textF" destination="VXd-6N-BNE" id="UPA-Yd-GOh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXG-YB-8el">
+                    <rect key="frame" x="104" y="125.5" width="167.5" height="45"/>
+                    <color key="backgroundColor" red="0.92801547050476074" green="0.45724540948867798" blue="0.45962017774581909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="兑换"/>
+                    <connections>
+                        <action selector="exchangeBtnDIdClicked:" destination="-1" eventType="touchUpInside" id="Lwn-vk-Kty"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wx-VV-YyH">
+                    <rect key="frame" x="20" y="30" width="335" height="45.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入兑换码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-6N-BNE">
+                            <rect key="frame" x="12" y="5" width="311" height="35.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VXd-6N-BNE" firstAttribute="leading" secondItem="4Wx-VV-YyH" secondAttribute="leading" constant="12" id="Ee0-Lw-IqI"/>
+                        <constraint firstAttribute="trailing" secondItem="VXd-6N-BNE" secondAttribute="trailing" constant="12" id="XQG-lj-aJP"/>
+                        <constraint firstItem="VXd-6N-BNE" firstAttribute="top" secondItem="4Wx-VV-YyH" secondAttribute="top" constant="5" id="dL1-TN-zjE"/>
+                        <constraint firstAttribute="bottom" secondItem="VXd-6N-BNE" secondAttribute="bottom" constant="5" id="tud-lT-aPM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94183546304702759" green="0.93911617994308472" blue="0.94194322824478149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aXG-YB-8el" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ian-Bv-YfD"/>
+                <constraint firstItem="aXG-YB-8el" firstAttribute="height" secondItem="4Wx-VV-YyH" secondAttribute="height" id="O0v-Jd-DAO"/>
+                <constraint firstItem="aXG-YB-8el" firstAttribute="width" secondItem="4Wx-VV-YyH" secondAttribute="width" multiplier="0.5" id="QE6-j0-fa2"/>
+                <constraint firstItem="aXG-YB-8el" firstAttribute="top" secondItem="4Wx-VV-YyH" secondAttribute="bottom" constant="50" id="aq6-Aw-Uz6"/>
+                <constraint firstAttribute="trailing" secondItem="4Wx-VV-YyH" secondAttribute="trailing" constant="20" id="k34-kh-DJC"/>
+                <constraint firstItem="4Wx-VV-YyH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="ofH-54-QeJ"/>
+                <constraint firstItem="4Wx-VV-YyH" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.068" id="sfD-7N-lrz"/>
+                <constraint firstItem="4Wx-VV-YyH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="wui-VT-SeH"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

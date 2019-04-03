@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YRFeedbackVc">
+            <connections>
+                <outlet property="textF" destination="1eo-CI-MEu" id="Ygw-nM-vAr"/>
+                <outlet property="textVBackV" destination="Rjf-Qm-4MU" id="O2r-oP-fDk"/>
+                <outlet property="textView" destination="5P9-QT-Mde" id="JQm-SR-cJU"/>
+                <outlet property="tfBackV" destination="Bil-BO-d2U" id="cuW-LG-Xo2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rjf-Qm-4MU">
+                    <rect key="frame" x="12" y="20" width="351" height="187"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-QT-Mde" customClass="YRPlaceTextView">
+                            <rect key="frame" x="10" y="10" width="331" height="167"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5P9-QT-Mde" firstAttribute="top" secondItem="Rjf-Qm-4MU" secondAttribute="top" constant="10" id="NzF-h0-OJD"/>
+                        <constraint firstAttribute="bottom" secondItem="5P9-QT-Mde" secondAttribute="bottom" constant="10" id="QFE-JZ-bB4"/>
+                        <constraint firstAttribute="trailing" secondItem="5P9-QT-Mde" secondAttribute="trailing" constant="10" id="ith-N1-U2Y"/>
+                        <constraint firstItem="5P9-QT-Mde" firstAttribute="leading" secondItem="Rjf-Qm-4MU" secondAttribute="leading" constant="10" id="rD4-v9-wrJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bil-BO-d2U">
+                    <rect key="frame" x="12" y="227" width="351" height="66.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1eo-CI-MEu">
+                            <rect key="frame" x="20" y="5" width="311" height="56.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1eo-CI-MEu" firstAttribute="top" secondItem="Bil-BO-d2U" secondAttribute="top" constant="5" id="4XZ-s5-Y0R"/>
+                        <constraint firstAttribute="bottom" secondItem="1eo-CI-MEu" secondAttribute="bottom" constant="5" id="T9d-Yt-zcn"/>
+                        <constraint firstAttribute="trailing" secondItem="1eo-CI-MEu" secondAttribute="trailing" constant="20" id="lPf-yk-HGE"/>
+                        <constraint firstItem="1eo-CI-MEu" firstAttribute="leading" secondItem="Bil-BO-d2U" secondAttribute="leading" constant="20" id="zpQ-TC-t26"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90970492362976074" green="0.90986096858978271" blue="0.9096950888633728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rjf-Qm-4MU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="1j8-2M-lWs"/>
+                <constraint firstItem="Bil-BO-d2U" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="3Rj-aL-etG"/>
+                <constraint firstItem="Bil-BO-d2U" firstAttribute="trailing" secondItem="Rjf-Qm-4MU" secondAttribute="trailing" id="GFu-c1-T4I"/>
+                <constraint firstItem="Bil-BO-d2U" firstAttribute="leading" secondItem="Rjf-Qm-4MU" secondAttribute="leading" id="XRR-A1-nsE"/>
+                <constraint firstItem="Rjf-Qm-4MU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="gcE-gI-4bv"/>
+                <constraint firstAttribute="trailing" secondItem="Rjf-Qm-4MU" secondAttribute="trailing" constant="12" id="st9-cN-vn0"/>
+                <constraint firstItem="Rjf-Qm-4MU" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.28" id="vDQ-Wg-dIg"/>
+                <constraint firstItem="Bil-BO-d2U" firstAttribute="top" secondItem="Rjf-Qm-4MU" secondAttribute="bottom" constant="20" id="wCE-XE-4Tb"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="104.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RZg-xa-t7C" customClass="YRCaptureFailView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zp-zp-xP6">
+                    <rect key="frame" x="232" y="89.5" width="99" height="52"/>
+                    <state key="normal" image="henxinjujue_button"/>
+                    <connections>
+                        <action selector="refuseBtnClicked:" destination="RZg-xa-t7C" eventType="touchUpInside" id="gGx-lM-lh4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倒计时: 30s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1r-RH-Ky4" customClass="FlowerLabel">
+                    <rect key="frame" x="142" y="163" width="90.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="啊噢~就差一点点了!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ve-gG-naj" customClass="FlowerLabel">
+                    <rect key="frame" x="110" y="47.5" width="154.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40a-34-kWG">
+                    <rect key="frame" x="44.5" y="89.5" width="99" height="52"/>
+                    <state key="normal" image="zailaiyici_button"/>
+                    <connections>
+                        <action selector="playItAgainBtnClicked:" destination="RZg-xa-t7C" eventType="touchUpInside" id="zF6-wa-cND"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0zp-zp-xP6" firstAttribute="centerX" secondItem="RZg-xa-t7C" secondAttribute="centerX" multiplier="1.5" id="2w3-P6-Z9C"/>
+                <constraint firstItem="J1r-RH-Ky4" firstAttribute="centerY" secondItem="RZg-xa-t7C" secondAttribute="centerY" multiplier="1.5" id="Cs8-Ow-ZiE"/>
+                <constraint firstItem="2ve-gG-naj" firstAttribute="centerX" secondItem="RZg-xa-t7C" secondAttribute="centerX" id="HsC-qM-iYV"/>
+                <constraint firstItem="0zp-zp-xP6" firstAttribute="centerY" secondItem="RZg-xa-t7C" secondAttribute="centerY" id="clt-bA-T3A"/>
+                <constraint firstItem="J1r-RH-Ky4" firstAttribute="centerX" secondItem="RZg-xa-t7C" secondAttribute="centerX" id="dDS-jL-gjJ"/>
+                <constraint firstItem="2ve-gG-naj" firstAttribute="centerY" secondItem="RZg-xa-t7C" secondAttribute="centerY" multiplier="0.5" id="hD1-32-fKq"/>
+                <constraint firstItem="40a-34-kWG" firstAttribute="centerY" secondItem="RZg-xa-t7C" secondAttribute="centerY" id="qiT-jM-Ttn"/>
+                <constraint firstItem="40a-34-kWG" firstAttribute="centerX" secondItem="RZg-xa-t7C" secondAttribute="centerX" multiplier="0.5" id="ygV-i1-Z5e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countdownL" destination="J1r-RH-Ky4" id="opS-Xf-6U2"/>
+                <outlet property="hintText" destination="2ve-gG-naj" id="sN2-Pn-B3H"/>
+            </connections>
+            <point key="canvasLocation" x="59.5" y="-225.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="henxinjujue_button" width="99" height="52"/>
+        <image name="zailaiyici_button" width="99" height="52"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="199" id="KGk-i7-Jjw" customClass="YRPrizeDetailBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="198.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="悬着兑换成金币后无法在请求发货, 金币可用于兑换娃娃或开宝箱" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-Lu-5eW">
+                        <rect key="frame" x="12" y="12" width="194.5" height="174.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cln-Zs-moT">
+                        <rect key="frame" x="218.5" y="79" width="89.5" height="40"/>
+                        <color key="backgroundColor" red="0.87264686822891235" green="0.91524845361709595" blue="0.78849554061889648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="83x-S7-6ci"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="兑换">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="touchBtnDidlicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XrH-lz-TPE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cln-Zs-moT" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.28" id="HX7-cN-KVi"/>
+                    <constraint firstItem="5a0-Lu-5eW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="MBg-gg-jLn"/>
+                    <constraint firstAttribute="trailing" secondItem="cln-Zs-moT" secondAttribute="trailing" constant="12" id="ULg-lv-3Zk"/>
+                    <constraint firstItem="cln-Zs-moT" firstAttribute="leading" secondItem="5a0-Lu-5eW" secondAttribute="trailing" constant="12" id="coW-LR-e6C"/>
+                    <constraint firstItem="5a0-Lu-5eW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="heW-Xy-Hxa"/>
+                    <constraint firstItem="cln-Zs-moT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yqX-2a-HID"/>
+                    <constraint firstAttribute="bottom" secondItem="5a0-Lu-5eW" secondAttribute="bottom" constant="12" id="zhw-Ja-a7h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92801547050476074" green="0.45724540948867798" blue="0.45962017774581909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="titleL" destination="5a0-Lu-5eW" id="WgD-S2-0uP"/>
+                <outlet property="touchBtn" destination="cln-Zs-moT" id="i5j-hx-WG2"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="129.5"/>
+        </tableViewCell>
+    </objects>
+</document>

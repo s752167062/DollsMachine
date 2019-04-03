@@ -1,0 +1,44 @@
+//
+//  NetJoyMachine.pch
+//  NetJoyMachine
+//
+//  Created by ZMJ on 2017/11/13.
+//  Copyright © 2017年 ZMJ. All rights reserved.
+//
+
+#import "UIView+Frame.h"
+#import "UIColor+Hex.h"
+#import "GlobeConst.h"
+#import "UIBarButtonItem+Item.h"
+#import "UIImage+Render.h"
+#import "PublicMacro.h"
+#import "NSString+HJCommon.h"
+#import "UIImageView+ZMJCornerRadius.h"
+
+/*****屏幕*******/
+#define MJScreenW [UIScreen mainScreen].bounds.size.width
+#define MJScreenH [UIScreen mainScreen].bounds.size.height
+
+#define MJKeyWindow [UIApplication sharedApplication].keyWindow
+
+#define iPhone5 (MJScreenH == 568)
+#define iPhone6 (MJScreenH == 667)
+#define iPhone6p (MJScreenH == 736)
+#define iPhone4 (MJScreenH == 480)
+#define iPhoneX (MJScreenW == 375.f && MJScreenH == 812.f ? YES : NO)
+
+//测试DEBUG
+#define isDEBUG 1
+
+
+
+#define MJFunc MJLog(@"%s",__func__)
+
+/*自定义Log*/
+// 调试
+#ifdef DEBUG
+#define MJLog(...) NSLog(__VA_ARGS__)
+#else
+// 发布
+#define MJLog(...)
+#endif

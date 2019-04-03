@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g9a-oI-HJe" customClass="YRCoinAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="querenchuangkou_dikuang_line" translatesAutoresizingMaskIntoConstraints="NO" id="vC1-68-2yv">
+                    <rect key="frame" x="0.0" y="0.0" width="395" height="202"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3y-oT-jGA">
+                    <rect key="frame" x="12" y="12" width="371" height="178"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elc-8M-RkT">
+                            <rect key="frame" x="20" y="127" width="135.5" height="39"/>
+                            <color key="backgroundColor" red="0.99952226877212524" green="0.34376809000968933" blue="0.37451636791229248" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="确认"/>
+                            <connections>
+                                <action selector="verifyBtnDidClicked:" destination="g9a-oI-HJe" eventType="touchUpInside" id="T4i-Cm-dX0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gul-Sb-8Py">
+                            <rect key="frame" x="215.5" y="127" width="135.5" height="39"/>
+                            <color key="backgroundColor" red="0.69128495454788208" green="0.69181954860687256" blue="0.6913677453994751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="cancelBtnDidClicked:" destination="g9a-oI-HJe" eventType="touchUpInside" id="dcK-Gr-vo2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兑换商品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QO5-G7-Nm1">
+                            <rect key="frame" x="150.5" y="20" width="69.5" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.99952083826065063" green="0.34794634580612183" blue="0.37451434135437012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cl0-PS-DwM">
+                            <rect key="frame" x="10" y="53" width="351" height="1"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dss-NW-QGv"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="确认兑换耳罩兔子公仔消耗30金?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vtw-Nu-fi4">
+                            <rect key="frame" x="10" y="66" width="351" height="49"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.99952083830000005" green="0.3479463458" blue="0.37451434140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.89894584760273977" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Cl0-PS-DwM" firstAttribute="leading" secondItem="p3y-oT-jGA" secondAttribute="leading" constant="10" id="25U-W3-47t"/>
+                        <constraint firstAttribute="trailing" secondItem="Gul-Sb-8Py" secondAttribute="trailing" constant="20" id="6Gl-Sa-dPf"/>
+                        <constraint firstAttribute="trailing" secondItem="Cl0-PS-DwM" secondAttribute="trailing" constant="10" id="9Nv-On-ZNA"/>
+                        <constraint firstItem="Vtw-Nu-fi4" firstAttribute="top" secondItem="Cl0-PS-DwM" secondAttribute="bottom" constant="12" id="CQP-L6-xXr"/>
+                        <constraint firstItem="elc-8M-RkT" firstAttribute="top" secondItem="Vtw-Nu-fi4" secondAttribute="bottom" constant="12" id="E7i-pb-l87"/>
+                        <constraint firstItem="Gul-Sb-8Py" firstAttribute="leading" secondItem="elc-8M-RkT" secondAttribute="trailing" constant="60" id="ELI-jv-f3H"/>
+                        <constraint firstItem="Gul-Sb-8Py" firstAttribute="height" secondItem="elc-8M-RkT" secondAttribute="height" id="GO0-Sx-Mxc"/>
+                        <constraint firstItem="Gul-Sb-8Py" firstAttribute="bottom" secondItem="elc-8M-RkT" secondAttribute="bottom" id="JZG-LX-4xv"/>
+                        <constraint firstItem="QO5-G7-Nm1" firstAttribute="centerX" secondItem="p3y-oT-jGA" secondAttribute="centerX" id="T62-zY-KMx"/>
+                        <constraint firstAttribute="bottom" secondItem="elc-8M-RkT" secondAttribute="bottom" constant="12" id="ass-Yx-54s"/>
+                        <constraint firstItem="Vtw-Nu-fi4" firstAttribute="leading" secondItem="Cl0-PS-DwM" secondAttribute="leading" id="bWb-vk-vOY"/>
+                        <constraint firstItem="Vtw-Nu-fi4" firstAttribute="trailing" secondItem="Cl0-PS-DwM" secondAttribute="trailing" id="dhD-V6-KYD"/>
+                        <constraint firstItem="Cl0-PS-DwM" firstAttribute="top" secondItem="QO5-G7-Nm1" secondAttribute="bottom" constant="12" id="emk-vk-wFk"/>
+                        <constraint firstItem="Gul-Sb-8Py" firstAttribute="width" secondItem="elc-8M-RkT" secondAttribute="width" id="fJt-fv-y9R"/>
+                        <constraint firstItem="elc-8M-RkT" firstAttribute="leading" secondItem="p3y-oT-jGA" secondAttribute="leading" constant="20" id="hgp-L7-cg4"/>
+                        <constraint firstItem="QO5-G7-Nm1" firstAttribute="top" secondItem="p3y-oT-jGA" secondAttribute="top" constant="20" id="jWP-Bb-mfs"/>
+                        <constraint firstItem="elc-8M-RkT" firstAttribute="height" secondItem="p3y-oT-jGA" secondAttribute="height" multiplier="0.22" id="zzI-a3-NmN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vC1-68-2yv" firstAttribute="leading" secondItem="g9a-oI-HJe" secondAttribute="leading" id="1c8-dq-0CR"/>
+                <constraint firstAttribute="bottom" secondItem="vC1-68-2yv" secondAttribute="bottom" id="Pns-v3-XBa"/>
+                <constraint firstAttribute="trailing" secondItem="vC1-68-2yv" secondAttribute="trailing" id="Udf-YT-zMA"/>
+                <constraint firstAttribute="bottom" secondItem="p3y-oT-jGA" secondAttribute="bottom" constant="12" id="YE0-cn-bM7"/>
+                <constraint firstItem="vC1-68-2yv" firstAttribute="top" secondItem="g9a-oI-HJe" secondAttribute="top" id="d9S-DJ-AAS"/>
+                <constraint firstItem="p3y-oT-jGA" firstAttribute="leading" secondItem="g9a-oI-HJe" secondAttribute="leading" constant="12" id="jIn-dc-KLV"/>
+                <constraint firstItem="p3y-oT-jGA" firstAttribute="top" secondItem="g9a-oI-HJe" secondAttribute="top" constant="12" id="lVa-d6-lKp"/>
+                <constraint firstAttribute="trailing" secondItem="p3y-oT-jGA" secondAttribute="trailing" constant="12" id="n2y-DD-dzo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="Gul-Sb-8Py" id="oPf-1U-Rrj"/>
+                <outlet property="contentL" destination="Vtw-Nu-fi4" id="uRa-sk-v4A"/>
+                <outlet property="titleL" destination="QO5-G7-Nm1" id="tCv-RA-d7x"/>
+                <outlet property="verifyBtn" destination="elc-8M-RkT" id="SQn-eY-c3f"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="38"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="querenchuangkou_dikuang_line" width="244" height="144"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G8T-fr-eLy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q3w-bI-sO7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denglujiemian_beijingtu" translatesAutoresizingMaskIntoConstraints="NO" id="oSY-d7-18C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijing_xiongmao" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-yg-Hvi">
+                                <rect key="frame" x="0.0" y="495" width="375" height="172"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="denglu_beijing_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Va9-N3-Ouw">
+                                <rect key="frame" x="61.5" y="204.5" width="252" height="99"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mj9-N5-JQw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="204.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="42G-Vk-dRt">
+                                        <rect key="frame" x="75" y="65.5" width="224" height="73"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="42G-Vk-dRt" firstAttribute="centerY" secondItem="mj9-N5-JQw" secondAttribute="centerY" id="Del-5y-BZk"/>
+                                    <constraint firstItem="42G-Vk-dRt" firstAttribute="centerX" secondItem="mj9-N5-JQw" secondAttribute="centerX" id="XV5-45-J1F"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Va9-N3-Ouw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1lz-E2-InS"/>
+                            <constraint firstItem="Q3w-bI-sO7" firstAttribute="top" secondItem="AuS-yg-Hvi" secondAttribute="bottom" id="B7m-jJ-Xk1"/>
+                            <constraint firstAttribute="trailing" secondItem="mj9-N5-JQw" secondAttribute="trailing" id="F8K-91-GQQ"/>
+                            <constraint firstItem="AuS-yg-Hvi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Fdh-IM-bnx"/>
+                            <constraint firstAttribute="trailing" secondItem="AuS-yg-Hvi" secondAttribute="trailing" id="NO1-tV-phB"/>
+                            <constraint firstItem="oSY-d7-18C" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Xdz-H0-kza"/>
+                            <constraint firstItem="mj9-N5-JQw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="YwX-hK-ybJ"/>
+                            <constraint firstItem="Q3w-bI-sO7" firstAttribute="top" secondItem="oSY-d7-18C" secondAttribute="bottom" id="a5t-6y-dJh"/>
+                            <constraint firstItem="mj9-N5-JQw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aC4-Ug-XXk"/>
+                            <constraint firstItem="oSY-d7-18C" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ibp-tp-RkM"/>
+                            <constraint firstAttribute="trailing" secondItem="oSY-d7-18C" secondAttribute="trailing" id="qpH-fy-ibb"/>
+                            <constraint firstItem="Va9-N3-Ouw" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="tYz-rd-aFy"/>
+                            <constraint firstItem="Va9-N3-Ouw" firstAttribute="top" secondItem="mj9-N5-JQw" secondAttribute="bottom" id="ve2-Gb-Pq4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beijing_xiongmao" width="320" height="172"/>
+        <image name="denglu_beijing_icon" width="252" height="99"/>
+        <image name="denglujiemian_beijingtu" width="320" height="568"/>
+        <image name="logo" width="224" height="73"/>
+    </resources>
+</document>

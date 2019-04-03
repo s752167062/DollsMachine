@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="YRDeliverAdsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-T5-F7q">
+                        <rect key="frame" x="20" y="0.0" width="280" height="114.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzK-aF-QtD">
+                                <rect key="frame" x="12" y="40" width="35" height="35"/>
+                                <state key="normal" image="weigouxuan_line">
+                                    <color key="titleColor" red="0.92801547049999999" green="0.45724540949999998" blue="0.45962017770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" image="xuanzhong_line"/>
+                                <connections>
+                                    <action selector="selectedBtnDidClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0Q7-kh-cVS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16U-YN-Zrj">
+                                <rect key="frame" x="233" y="40" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="mQR-es-ecX"/>
+                                    <constraint firstAttribute="width" constant="35" id="rwn-4W-mmu"/>
+                                </constraints>
+                                <state key="normal" image="bianjidizhi_button">
+                                    <color key="titleColor" red="0.92801547049999999" green="0.45724540949999998" blue="0.45962017770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="editBtnDidClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mtB-PH-da2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州天河区科韵路中119号金悦大厦三楼 张小凡 1885556666" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpR-Ap-xtj">
+                                <rect key="frame" x="57" y="10" width="166" height="94.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PpR-Ap-xtj" secondAttribute="bottom" constant="10" id="51A-rJ-sJp"/>
+                            <constraint firstItem="PzK-aF-QtD" firstAttribute="leading" secondItem="Cti-T5-F7q" secondAttribute="leading" constant="12" id="Jns-ng-8sp"/>
+                            <constraint firstItem="PzK-aF-QtD" firstAttribute="height" secondItem="16U-YN-Zrj" secondAttribute="height" id="Wdj-FV-tga"/>
+                            <constraint firstItem="16U-YN-Zrj" firstAttribute="leading" secondItem="PpR-Ap-xtj" secondAttribute="trailing" constant="10" id="bKk-un-KHj"/>
+                            <constraint firstItem="PpR-Ap-xtj" firstAttribute="leading" secondItem="PzK-aF-QtD" secondAttribute="trailing" constant="10" id="bYA-wr-c18"/>
+                            <constraint firstItem="PpR-Ap-xtj" firstAttribute="top" secondItem="Cti-T5-F7q" secondAttribute="top" constant="10" id="c0h-ZJ-4QF"/>
+                            <constraint firstItem="PzK-aF-QtD" firstAttribute="centerY" secondItem="Cti-T5-F7q" secondAttribute="centerY" id="hbX-q9-zBK"/>
+                            <constraint firstItem="16U-YN-Zrj" firstAttribute="centerY" secondItem="Cti-T5-F7q" secondAttribute="centerY" id="iFq-bB-kTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="16U-YN-Zrj" secondAttribute="trailing" constant="12" id="mxX-6G-Rxm"/>
+                            <constraint firstItem="PzK-aF-QtD" firstAttribute="width" secondItem="16U-YN-Zrj" secondAttribute="width" id="r6Z-Uc-QjH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cti-T5-F7q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EYK-9L-jvk"/>
+                    <constraint firstAttribute="trailing" secondItem="Cti-T5-F7q" secondAttribute="trailing" constant="20" id="G4L-Ft-G9J"/>
+                    <constraint firstItem="Cti-T5-F7q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PAO-g1-OOb"/>
+                    <constraint firstAttribute="bottom" secondItem="Cti-T5-F7q" secondAttribute="bottom" id="QIw-5w-LGt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92801547050476074" green="0.45724540948867798" blue="0.45962017774581909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="backView" destination="Cti-T5-F7q" id="Ja0-0c-2S9"/>
+                <outlet property="contentL" destination="PpR-Ap-xtj" id="kuV-Ho-cny"/>
+                <outlet property="editBtn" destination="16U-YN-Zrj" id="6bi-sX-k35"/>
+                <outlet property="selectedBtn" destination="PzK-aF-QtD" id="fNs-o9-mkC"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="87.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bianjidizhi_button" width="27" height="29"/>
+        <image name="weigouxuan_line" width="16" height="16"/>
+        <image name="xuanzhong_line" width="16" height="16"/>
+    </resources>
+</document>

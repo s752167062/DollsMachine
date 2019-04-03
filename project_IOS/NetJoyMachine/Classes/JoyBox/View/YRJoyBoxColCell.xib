@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="YRJoyBoxColCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="299"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="299"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xiaoxin" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-rt-3Lx">
+                        <rect key="frame" x="0.0" y="0.0" width="354" height="229"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yJ-d3-JZc">
+                        <rect key="frame" x="0.0" y="229" width="354" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌萌哒蜡笔小新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9Q-Mk-xJJ" customClass="FlowerLabel">
+                                <rect key="frame" x="10" y="11" width="93" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可兑换成:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSe-4Z-aWM" customClass="FlowerLabel">
+                                <rect key="frame" x="10" y="29.5" width="57" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017/11/21 15:18:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyE-DY-ldR">
+                                <rect key="frame" x="10" y="47.5" width="334" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1M-E9-Rfr">
+                                <rect key="frame" x="77" y="29.5" width="47" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="888" image="jinbi_icon"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKg-vj-wGQ">
+                                <rect key="frame" x="12" y="0.0" width="330" height="1"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0wT-vH-BQM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KyE-DY-ldR" secondAttribute="bottom" constant="4" id="71i-Eu-Ddh"/>
+                            <constraint firstItem="jKg-vj-wGQ" firstAttribute="leading" secondItem="3yJ-d3-JZc" secondAttribute="leading" constant="12" id="El0-c7-9YB"/>
+                            <constraint firstItem="T9Q-Mk-xJJ" firstAttribute="top" secondItem="jKg-vj-wGQ" secondAttribute="bottom" constant="10" id="FKM-fr-QBr"/>
+                            <constraint firstAttribute="height" constant="70" id="GUo-Mt-uBN"/>
+                            <constraint firstItem="KyE-DY-ldR" firstAttribute="leading" secondItem="3yJ-d3-JZc" secondAttribute="leading" constant="10" id="I75-d1-F3N"/>
+                            <constraint firstItem="HSe-4Z-aWM" firstAttribute="leading" secondItem="T9Q-Mk-xJJ" secondAttribute="leading" id="Ita-cb-CPj"/>
+                            <constraint firstItem="KyE-DY-ldR" firstAttribute="height" secondItem="T9Q-Mk-xJJ" secondAttribute="height" id="MdV-yp-z2t"/>
+                            <constraint firstItem="f1M-E9-Rfr" firstAttribute="bottom" secondItem="HSe-4Z-aWM" secondAttribute="bottom" id="RUf-2E-Wla"/>
+                            <constraint firstItem="f1M-E9-Rfr" firstAttribute="leading" secondItem="HSe-4Z-aWM" secondAttribute="trailing" constant="10" id="SLd-wc-xsd"/>
+                            <constraint firstItem="f1M-E9-Rfr" firstAttribute="top" secondItem="HSe-4Z-aWM" secondAttribute="top" id="UIs-FK-wOc"/>
+                            <constraint firstItem="KyE-DY-ldR" firstAttribute="top" secondItem="HSe-4Z-aWM" secondAttribute="bottom" id="XU7-tB-7sW"/>
+                            <constraint firstItem="jKg-vj-wGQ" firstAttribute="top" secondItem="3yJ-d3-JZc" secondAttribute="top" id="bOU-Ke-hdO"/>
+                            <constraint firstItem="T9Q-Mk-xJJ" firstAttribute="leading" secondItem="3yJ-d3-JZc" secondAttribute="leading" constant="10" id="e0J-L2-2QO"/>
+                            <constraint firstAttribute="trailing" secondItem="KyE-DY-ldR" secondAttribute="trailing" constant="10" id="e98-S3-bxB"/>
+                            <constraint firstAttribute="trailing" secondItem="jKg-vj-wGQ" secondAttribute="trailing" constant="12" id="lbL-hC-z8m"/>
+                            <constraint firstItem="HSe-4Z-aWM" firstAttribute="height" secondItem="T9Q-Mk-xJJ" secondAttribute="height" id="xJG-tL-481"/>
+                            <constraint firstItem="HSe-4Z-aWM" firstAttribute="top" secondItem="T9Q-Mk-xJJ" secondAttribute="bottom" id="xzM-L7-5zr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3yJ-d3-JZc" secondAttribute="trailing" id="Dem-ak-wwp"/>
+                <constraint firstAttribute="trailing" secondItem="hEy-rt-3Lx" secondAttribute="trailing" id="ZP6-qO-Ajq"/>
+                <constraint firstItem="hEy-rt-3Lx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ds9-4b-7vw"/>
+                <constraint firstItem="hEy-rt-3Lx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jMh-4N-7JS"/>
+                <constraint firstItem="3yJ-d3-JZc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="q5D-0l-LNk"/>
+                <constraint firstItem="3yJ-d3-JZc" firstAttribute="top" secondItem="hEy-rt-3Lx" secondAttribute="bottom" id="rGW-31-J9r"/>
+                <constraint firstAttribute="bottom" secondItem="3yJ-d3-JZc" secondAttribute="bottom" id="wDV-MY-iV5"/>
+            </constraints>
+            <size key="customSize" width="354" height="299"/>
+            <connections>
+                <outlet property="buttomBackView" destination="3yJ-d3-JZc" id="06M-5I-Reh"/>
+                <outlet property="describeL" destination="HSe-4Z-aWM" id="5oW-iR-lP6"/>
+                <outlet property="goodsImgV" destination="hEy-rt-3Lx" id="ec5-Ez-s5Y"/>
+                <outlet property="goodsNameL" destination="T9Q-Mk-xJJ" id="UzO-65-k2Y"/>
+                <outlet property="moneyBtn" destination="f1M-E9-Rfr" id="bxb-uK-lyn"/>
+                <outlet property="timeL" destination="KyE-DY-ldR" id="hvq-wB-HOU"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="33.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="jinbi_icon" width="22" height="22"/>
+        <image name="xiaoxin" width="250" height="250"/>
+    </resources>
+</document>
