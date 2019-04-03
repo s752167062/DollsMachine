@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--背景颜色-->
+    <color name="backgroud_white">#ffffff</color>
+    <color name="backgroud_white10">#19ffffff</color>
+    <color name="backgroud_scancode">#7f000000</color>
+    <color name="backgroud_black_50">#7f000000</color>
+    <color name="backgroud_black_30">#99000000</color>
+    <color name="backgroud_white30">#99ffffff</color>
+    <!--线的颜色-->
+    <color name="line_gray">#cccccc</color>
+    <color name="line_white_30">#99ffffff</color>
+    <color name="line_lowgray">#e5e5e5</color>
+    <!--文字颜色-->
+    <color name="text_red">#ff3355</color>
+    <color name="text_blue">#000964</color>
+    <color name="white">#ffffff</color>
+    <color name="white_menu">#33ffffff</color>
+    <color name="text_black">#333333</color>
+    <color name="liang_bule">#2a90d7</color>
+
+    <color name="text_alpha_black">#89333333</color>
+    <color name="text_gray">#666666</color>
+    <color name="text_lowgray">#999999</color>
+    <color name="text_white_90">#e5ffffff</color>
+    <color name="text_green">#53C7BC</color>
+    <color name="text_green_shen">#3baed0</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_yellow">#f67119</color>
+    <!--主题颜色-->
+    <color name="theme_text_color">#E60115</color>
+    <color name="theme_color">#E60115</color>
+    <color name="gray_color_d">#eeeeee</color>
+    <!--背景色-->
+    <color name="bg_green">#53C7BC</color>
+    <color name="bg_blue">#000964</color>
+    <color name="bg_blue_50">#7f000964</color>
+    <color name="bg_black_gray">#333333</color>
+    <color name="red">#FF3333</color>
+    <color name="red_low">#f08587</color>
+    <color name="wutu">#f08587</color>
+    <color name="incactor_red_color">#D74A4F</color>
+
+    <color name="bg_green_low">#44C465</color>
+    <color name="bg_gray">#F6F6F6</color>
+    <color name="bg_toast">#ff4A4A4A</color>
+
+
+    <color name="bg_line">#e5e5e5</color>
+    <color name="bg_line_drak">#cccccc</color>
+    <color name="bg_green_drak">#44a915</color>
+    <color name="bg_gray_a1">#a1a1a1</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#dc7123</color>
+    <color name="yellow_low">#f9a57f</color>
+    <color name="black_40">#66000000</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="black_sky">#00C6AB</color>
+    <color name="gray_blue">#4290D3</color>
+    <color name="rp_gray">#2D2425</color>
+    <color name="line_s_blue">#355391</color>
+    <color name="transparent"> #00000000</color>
+    <color name="line_q_blue">#48719F</color>
+    <color name="goods_color">#EC574E</color>
+
+
+    <color name="colorPrimary" >#3F51B5</color >
+    <color name="colorPrimaryDark" >#303F9F</color >
+    <color name="colorAccent" >#FF4081</color >
+    <color name="themeColor">#ED7575</color>
+</resources>

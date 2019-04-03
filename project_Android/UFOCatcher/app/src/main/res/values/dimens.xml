@@ -1,0 +1,131 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size2">2sp</dimen>
+    <dimen name="size3">3sp</dimen>
+    <dimen name="size4">4sp</dimen>
+
+    <dimen name="size5">5sp</dimen>
+    <dimen name="size10">10sp</dimen>
+    <dimen name="size16">16sp</dimen>
+
+    <dimen name="size15">15sp</dimen>
+    <dimen name="size13">13sp</dimen>
+    <dimen name="size14">14sp</dimen>
+    <dimen name="size12">12sp</dimen>
+
+    <dimen name="size17">17sp</dimen>
+
+    <dimen name="size18">18sp</dimen>
+    <dimen name="size20">20sp</dimen>
+
+    <dimen name="size22">22sp</dimen>
+
+    <dimen name="size23">23sp</dimen>
+
+    <dimen name="size24">24sp</dimen>
+    <dimen name="size30">30sp</dimen>
+    <dimen name="size40">40sp</dimen>
+    <dimen name="size45">45sp</dimen>
+    <dimen name="size50">50sp</dimen>
+    <dimen name="size60">60sp</dimen>
+
+    <dimen name="size90">90sp</dimen>
+    <dimen name="size100">100sp</dimen>
+    <!--字体大小-->
+    <dimen name="text_title">18sp</dimen>
+
+    <dimen name="text_title15">15sp</dimen>
+    <dimen name="text_content">14sp</dimen>
+    <dimen name="text_hint">12sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_25sp">25sp</dimen>
+
+    <dimen name="padding">12dp</dimen>
+    <dimen name="list_item_height">45dp</dimen>
+    <dimen name="line_height">0.8dp</dimen>
+    <dimen name="input_height">50dp</dimen>
+
+
+    <!--h:高度  w:宽度   m:margin,padding 4维-->
+    <dimen name="h_1">1dp</dimen>
+    <dimen name="h_2">2dp</dimen>
+    <dimen name="h_3">3dp</dimen>
+    <dimen name="h_4">4dp</dimen>
+    <dimen name="h_6">6dp</dimen>
+    <dimen name="h_8">8dp</dimen>
+    <dimen name="h_10">10dp</dimen>
+    <dimen name="h_12">12dp</dimen>
+    <dimen name="h_14">14dp</dimen>
+    <dimen name="h_18">18dp</dimen>
+    <dimen name="h_20">20dp</dimen>
+    <dimen name="h_24">24dp</dimen>
+    <dimen name="h_21">21dp</dimen>
+    <dimen name="h_22">22dp</dimen>
+    <dimen name="h_32">32dp</dimen>
+    <dimen name="h_36">36dp</dimen>
+    <dimen name="h_40">40dp</dimen>
+    <dimen name="h_42">42dp</dimen>
+    <dimen name="h_46">46dp</dimen>
+    <dimen name="h_50">50dp</dimen>
+    <dimen name="h_58">58dp</dimen>
+    <dimen name="h_64">64dp</dimen>
+    <dimen name="h_72">72dp</dimen>
+
+    <dimen name="h_75">75dp</dimen>
+    <dimen name="h_80">80dp</dimen>
+
+    <dimen name="h_97">97dp</dimen>
+    <dimen name="h_90">90dp</dimen>
+    <dimen name="h_100">100dp</dimen>
+    <dimen name="h_104">104dp</dimen>
+    <dimen name="h_110">110dp</dimen>
+
+    <dimen name="h_120">120dp</dimen>
+    <dimen name="h_130">130dp</dimen>
+    <dimen name="h_140">140dp</dimen>
+
+    <dimen name="h_150">150dp</dimen>
+
+    <dimen name="h_170">170dp</dimen>
+    <dimen name="h_180">180dp</dimen>
+    <dimen name="h_187">187dp</dimen>
+    <dimen name="h_196">196dp</dimen>
+    <dimen name="h_200">200dp</dimen>
+    <dimen name="h_210">210dp</dimen>
+    <dimen name="h_250">250dp</dimen>
+    <dimen name="h_300">300dp</dimen>
+
+    <dimen name="w_1">1dp</dimen>
+    <dimen name="w_4">4dp</dimen>
+    <dimen name="w_6">6dp</dimen>
+    <dimen name="w_12">12dp</dimen>
+    <dimen name="w_16">16dp</dimen>
+    <dimen name="w_18">18dp</dimen>
+    <dimen name="w_24">24dp</dimen>
+    <dimen name="w_32">32dp</dimen>
+    <dimen name="w_40">40dp</dimen>
+    <dimen name="w_42">42dp</dimen>
+    <dimen name="w_50">50dp</dimen>
+    <dimen name="w_58">58dp</dimen>
+    <dimen name="w_64">64dp</dimen>
+    <dimen name="w_72">72dp</dimen>
+    <dimen name="w_80">80dp</dimen>
+    <dimen name="w_100">100dp</dimen>
+    <dimen name="w_129">129dp</dimen>
+    <dimen name="w_145">145dp</dimen>
+    <dimen name="w_150">150dp</dimen>
+    <dimen name="w_196">196dp</dimen>
+    <dimen name="w_200">200dp</dimen>
+    <dimen name="w_250">250dp</dimen>
+    <dimen name="w_300">300dp</dimen>
+
+    <dimen name="m_4">4dp</dimen>
+    <dimen name="m_6">6dp</dimen>
+    <dimen name="m_10">10dp</dimen>
+    <dimen name="m_12">12dp</dimen>
+    <dimen name="m_18">18dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:st="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.base.widget.imageview.roundedimageview.RoundedImageView
+            android:id="@+id/gz_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_gz_n"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="5dip"
+            android:background="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"
+            app:riv_tile_mode="repeat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_free"
+            android:layout_margin="15dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentBottom="true">
+
+            <!--android:background="@drawable/bg_transparent_bottom__gray"-->
+            <com.base.widget.StrokeTextView
+                android:id="@+id/gz_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                st:strokeColor="@color/black"
+                android:text="耳罩兔子公仔"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size13" />
+            <com.base.widget.StrokeTextView
+                android:id="@+id/gz_tv_zw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                st:strokeColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="/次"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size13" />
+            <com.base.widget.StrokeTextView
+                android:id="@+id/gz_tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/gz_tv_zw"
+                st:strokeColor="@color/black"
+                android:layout_centerVertical="true"
+                android:text="29"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size13" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

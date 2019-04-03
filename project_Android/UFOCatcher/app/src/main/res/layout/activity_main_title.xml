@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:background="@color/themeColor" >
+
+    <ImageView
+        android:id="@+id/button_iv_left"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_info"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/button_iv_right"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_hz"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="妈妈我要夹娃娃"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
